@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="./Assets/styles.css" />
 </head>
 <body>
+    <div id="error"></div>
     <div class="clearfix">
         <div class="card">
           <h1>Blog Tree Entry</h1>
-          <form method="POST"> 
+          <form id="form">
             <div class="input-group">
-                <label for="user-name">User Name</label>
-                <input type="text" name="user-name" id="user-name" />
+                <label for="userName">User Name</label>
+                <input type="text" name="userName" id="userName" />
             <div class="input-group">
-                <label for="blog-title">Blog Title</label>
-                <input type="text" name="blog-title" id="blog-title" />
+                <label for="blogTitle">Blog Title</label>
+                <input type="text" name="blogTitle" id="blogTitle" />
             <div class="input-group">
-                <label for="blog-content">Blog Content</label>
-                <input type="text" name="blog-content id="blog-content" />        
-              </div>  
-              <button id="submit">Submit</button>
-              <script src="./Assets/js/form.js"></script>  
-              <a href="Blog-Trees.html"></a>     
-</body>
+                <label for="blogContent">Blog Content</label>
+                <input type="text" name="blogContent" id="blogContent" />         
+            <button formaction="Blog-Trees.html" type="submit"  id="submit" >Submit</button>
+            </div>
+        </form>
+              
+        </body>
+        <script src="./Assets/js/form.js">
+            console.log(localStorage);
+        </script>  
+     
 </html>
