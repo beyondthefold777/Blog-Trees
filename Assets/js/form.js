@@ -16,23 +16,16 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const blogTitleInput = blogTitle.value.trim();
     const blogContentInput = blogContent.value.trim();
     
-    //if statement for empty form input
-    // if (userNameInput ==null || blogTitleInput ==null || blogContentInput ==null) {
-    //     alert("Please submit the form");
-    //     console.log('invalid input') 
-    //     return false;
-    // }
-    
-    let messages = []
-    if (name.value === '' || name.value == null)
-    messages.push ('Form Submission Is Required')
-    
-    
-    if (messages.length > 0) {
-       e.preventDefault()
-       errorElement.innerText = messages.join(',')
-    }
-    
+    // function for empty form input
+    function IsEmpty() {
+
+        if (document.form.userName.value == "") {
+          alert("empty");
+        }
+        return;
+      }
+   
+
     //creation of array for our objects
     let blogData = [] 
 //object
