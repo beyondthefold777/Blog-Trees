@@ -17,13 +17,10 @@ document.addEventListener(`DOMContentLoaded`, () => {
     const blogContentInput = blogContent.value.trim();
     
     // function for empty form input
-    function IsEmpty() {
-
-        if (document.form.userName.value == "") {
-          alert("empty");
-        }
-        return;
-      }
+    if (!userNameInput || !blogTitleInput || !blogContentInput) {
+        console.log('invalid input')
+        return
+    } 
    
 
     //creation of array for our objects
