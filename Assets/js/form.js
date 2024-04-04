@@ -19,7 +19,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     // function for empty form input
     if (!userNameInput || !blogTitleInput || !blogContentInput) {
         console.log('invalid input')
-        return
+        return false;
     } 
    
 
