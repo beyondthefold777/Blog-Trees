@@ -1,5 +1,4 @@
 
 
-localStorage.getItem("blogData")
 
 
