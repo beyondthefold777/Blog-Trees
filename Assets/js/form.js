@@ -2,76 +2,108 @@ const form = document.getElementById('form');
 const userName = document.getElementById('userName');
 const blogTitle = document.getElementById('blogTitle');
 const blogContent = document.getElementById('blogContent');
-const mybtn = document.getElementById('submit')
-//Submit button function
+
+
 document.addEventListener(`DOMContentLoaded`, () => {
     document.getElementById('form').onsubmit = 
     function (event) {
         event.preventDefault()
-        console.log('submit')
         
-    }});
+        
+        
+        const userNameValue = userName.value;
+        const blogTitleValue = blogTitle.value;
+        const blogContentValue = blogContent.value;
+        
+            // function for empty form input
+            if (!userName || !blogTitle || !blogContent) {
+                console.log('invalid input');
+                alert ('please fill all fields');
+                return false;
+            } 
+           
+    localStorage.setItem('user-name', userNameValue);
+    localStorage.setItem('blog-title', blogTitleValue);
+    localStorage.setItem('blog-content', blogContentValue);
+
+    window.location.href = 'Blog-Trees.html';
+    }})
+
+
+
+
+
+
+    // //object
+    //     const user = {
+        //     userName: userName,
+        //     blogTitle: blogTitle,
+        //     blogContent: blogContent,
+        //     }
+        //     // creation of array for our objects
+        //     let blogData = []; 
+        
+        //     //here we are pushing our object into the empty array
+        //     blogData.push(user);
+        
+        
     
-    const userNameInput = userName.value.trim();
-    const blogTitleInput = blogTitle.value.trim();
-    const blogContentInput = blogContent.value.trim();
     
-    // function for empty form input
-    if (!userNameInput || !blogTitleInput || !blogContentInput) {
-        console.log('invalid input')
-        return false;
-    } 
-   
-
-    //creation of array for our objects
-    let blogData = [] 
-//object
-    const user = {
-    userName: userName,
-    blogTitle: blogTitle,
-    blogContent: blogContent,
-    }
-    blogData.push(user)
-    console.log(blogData)
-
-
-// local storage object array
-localStorage.setItem('blogData', JSON.stringify(blogData));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// submission to local storage
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    //   const userName = document.querySelector('#userName').value;
+    //   const blogTitle = document.querySelector('#blogTitle').value;
+    //   const content = document.querySelector('#blogContent').value;
+    
+        
+    
+        
+    // // local storage object array
+    // localStorage.setItem('blogData', JSON.stringify(blogData));
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // // submission to local storage
+    
+    
+    
+    
+         
+      
+    
      
-  
-
- 
-   
-
-  
-
-
-  
+       
     
- 
+      
     
+    
+      
+        
+     
+        
+            
+            
+            
         
         
         
-    
-    
-    
