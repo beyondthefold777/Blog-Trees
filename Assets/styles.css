@@ -1,5 +1,5 @@
 body {
-background-image: url(/Blog-Trees/pics/socotrasunset.jpg);
+background-image: url(/Blog-Trees/pics/silhouette-of-nature-landscape-mountains-forest-in-background-blue-and-green-illustration-free-vector.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-size: 100% 100vh;
@@ -9,19 +9,35 @@ background-size: 100% 100vh;
 
 
 .card {
-    display: block;
+    /* display: block;
     border-radius: 8px;
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
       rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
     margin: 40px auto;
     padding: 20px;
     width: 30vw;
-    text-align: left;
+    text-align: left; */
+    
+      position: relative; 
+      width: 330px;
+      height: 370px;
+      background: #1c1c1c;
+      border-radius: 8px;
+      top: 50%;
+      left: 40%;
+      display: flex;
+      overflow: hidden;
+   
+
   }
+ h1 {
+  color: #fff;
+ } 
 
 .input-group {
     margin-top: 10px;
     margin-bottom: 10px;
+    color:#fff
   }
 
 button {
