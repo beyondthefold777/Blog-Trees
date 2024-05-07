@@ -10,7 +10,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
         event.preventDefault()
         
         
-        
+        // creating objects for local Storage
         const userNameValue = userName.value;
         const blogTitleValue = blogTitle.value;
         const blogContentValue = blogContent.value;
