@@ -26,7 +26,7 @@ document.addEventListener(`DOMContentLoaded`, () => {
     localStorage.setItem('blog-title', blogTitleValue);
     localStorage.setItem('blog-content', blogContentValue);
 
-    window.location.href = 'Blog-Trees.html';
+    window.location.href = 'blog-posts.html';
     }})
 
 

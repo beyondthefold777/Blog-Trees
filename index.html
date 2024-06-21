@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Assets/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<h1>
-    <nav class="navbar">
-   <div class="logo">
-    </nav>
-</nav></h1>
-<body>
-    <div class="clearfix">
-        <div class="card">
-          <h1><p>Blog Tree Poetry</p></h1>
-         
-         
-          <form id="form">
-            <div class="input-group">
-                <label for="userName">User Name</label>
-                <input type="text" name="userName" id="userName" />
-                <div class="input-group">
-                <label for="blogTitle">Blog Title</label>
-                <input type="text" name="blogTitle" id="blogTitle" />
-                <div class="input-group">
-                <label for="blogContent">Blog Content</label>
-                <input type="text" name="blogContent" id="blogContent" />         
-            <button formaction="Blog-Trees.html" type="submit"  id="submit" >Submit</button>
-            </div>
-        </form>
+<body><div class="card bg-black text-white rounded-lg shadow-lg p-6">
+    <h1 class="text-2xl font-bold mb-4">Blog Tree Poetry</h1>
+    
+    <form id="form">
+        <div class="input-group mb-4">
+            <label for="userName" class="block text-sm font-medium text-green-500">User Name</label>
+            <input type="text" name="userName" id="userName" class="input-field" />
+        </div>
+        
+        <div class="input-group mb-4">
+            <label for="blogTitle" class="block text-sm font-medium text-green-500">Poem Title</label>
+            <input type="text" name="blogTitle" id="blogTitle" class="input-field" />
+        </div>
+        
+        <div class="input-group mb-8">
+            <label for="blogContent" class="block text-sm font-medium text-green-500">Content</label>
+            <textarea name="blogContent" id="blogContent" rows="8" class="input-field resize-none"></textarea>
+        </div>
+        
+        <button formaction="blog-posts.html" type="submit" id="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            Submit
+        </button>
+    </form>
+</div>
               </body>
         <script src="./Assets/js/form.js">
-            
-        </script>  
+            </script>  
      
 </html>
