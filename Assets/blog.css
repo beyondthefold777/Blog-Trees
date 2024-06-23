@@ -1,31 +1,37 @@
-/* input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  height: 100px;
-} */
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --bg-color-dark: #1a202c;
+  --text-color-dark: #ffffff;
+}
 
-/* * {
-  box-sizing: border-box;
-} */
+body {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.5s, color 0.5s;
+}
 
-/* Custom CSS for the toggle button */
-#toggle:checked + .toggle-dot {
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+#toggle:checked+.toggle-dot {
   transform: translateX(100%);
-  background-color: #f6e05e; /* Change color for the dot when toggled */
+  background-color: #f6e05e;
 }
 
 .toggle-line {
+  background-color: #dddddd;
   transition: background-color 0.3s;
 }
 
 .toggle-dot {
+  background-color: #cccccc;
   transition: transform 0.3s, background-color 0.3s;
-  cursor: pointer; /* Add cursor pointer to make it clickable */
+  cursor: pointer;
 }
 
-.blogimg img {
-  width: 400px;
-  height: 400px;
+.dark-mode #toggle:checked+.toggle-dot {
+  background-color: #f6e05e;
 }
